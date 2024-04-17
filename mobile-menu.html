@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --white: #FFFFFF;
+            --black: #00000;
+            --very-light-pink: #C7C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --font-size-sm: 14px;
+            --font-size-md: 16px;
+            --font-size-lg: 18px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .mobile-menu {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .mobile-menu h1 {
+            font-size: var(--font-size-lg);
+        }
+
+        .menu {
+            width: 70%;
+            margin: 40px auto;
+        }
+
+        .mobile-menu .close {
+            position: absolute;
+            color: var(--very-light-pink);
+            right: 15px;
+            top: 10px;
+        }
+
+        .mobile-menu .close:hover {
+            cursor: pointer;
+        }
+
+        .mobile-menu ul {
+            list-style: none;
+            font-size: var(--font-size-md);
+            padding: 0;
+        }
+
+        .mobile-menu ul li {
+            padding: 20px 20px 20px 0;
+
+        }
+
+        .mobile-menu ul li a {
+            text-decoration: none;
+            color: var(--black);
+            font-weight: bold;
+
+        }
+
+        .bottom-menu {
+            border-top: 1px solid var(--very-light-pink);
+        }
+
+        .footer-items {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin: 80px 0;
+            font-size: var(--font-size-md);
+        }
+
+        .footer-items span {
+            color: var(--very-light-pink);
+        }
+
+        .footer-items a {
+            text-decoration: none;
+            color: var(--hospital-green);
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="mobile-menu">
+        <div class="close">X</div>
+        <div class="menu top-menu">
+            <h1>CATEGORIES</h1>
+
+            <ul>
+                <li><a href="">All</a></li>
+                <li><a href="">Clothes</a></li>
+                <li><a href="">Electronics</a></li>
+                <li><a href="">Furnitures</a></li>
+                <li><a href="">Toys</a></li>
+                <li><a href="">Others</a></li>
+            </ul>
+        </div>
+        <div class="menu bottom-menu">
+            <ul>
+                <li><a href="">My Orders</a></li>
+                <li><a href="">My Account</a></li>
+            </ul>
+            <div class="footer-items">
+                <span>andresduarte152@gmail.com</span>
+                <a href="">Sign Out</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

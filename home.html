@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --white: #FFFFFF;
+            --black: #00000;
+            --very-light-pink: #C7C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --font-size-sm: 14px;
+            --font-size-md: 16px;
+            --font-size-lg: 18px;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .home-container {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 240px);
+            column-gap: 30px;
+            row-gap: 30px;
+            padding: 40px;
+            place-content: center;
+        }
+
+        .product-card .product-image{
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        .product-footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 3px;
+            font-size: var(--font-size-sm);
+        }
+
+        .product-details {
+            line-height: 7px;
+        }
+
+        .product-details .product-price {
+            font-weight: bold;
+        }
+
+        .product-details .product-name {
+            color: var(--very-light-pink);
+        }
+
+        .cart-icon-container {
+            margin: auto 0;
+            cursor: pointer;
+        }
+
+        @media (max-width: 600px) {
+            .card-container {
+                grid-template-columns: repeat(auto-fill, 300px);
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="home-container">
+        <div class="card-container">
+            <div class="product-card">
+                <img src="./logos/pexels-pixabay-276517.jpg" alt="Bike" class="product-image">
+                <div class="product-footer">
+                    <div class="product-details">
+                        <p class="product-price">$ 120,00</p>
+                        <p class="product-name">Bike</p>
+                    </div>
+                    <figure class="cart-icon-container">
+                        <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon">
+                    </figure>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./logos/pexels-pixabay-276517.jpg" alt="Bike" class="product-image">
+                <div class="product-footer">
+                    <div class="product-details">
+                        <p class="product-price">$ 120,00</p>
+                        <p class="product-name">Bike</p>
+                    </div>
+                    <figure class="cart-icon-container">
+                        <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon">
+                    </figure>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./logos/pexels-pixabay-276517.jpg" alt="Bike" class="product-image">
+                <div class="product-footer">
+                    <div class="product-details">
+                        <p class="product-price">$ 120,00</p>
+                        <p class="product-name">Bike</p>
+                    </div>
+                    <figure class="cart-icon-container">
+                        <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon">
+                    </figure>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./logos/pexels-pixabay-276517.jpg" alt="Bike" class="product-image">
+                <div class="product-footer">
+                    <div class="product-details">
+                        <p class="product-price">$ 120,00</p>
+                        <p class="product-name">Bike</p>
+                    </div>
+                    <figure class="cart-icon-container">
+                        <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon">
+                    </figure>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./logos/pexels-pixabay-276517.jpg" alt="Bike" class="product-image">
+                <div class="product-footer">
+                    <div class="product-details">
+                        <p class="product-price">$ 120,00</p>
+                        <p class="product-name">Bike</p>
+                    </div>
+                    <figure class="cart-icon-container">
+                        <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon">
+                    </figure>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./logos/pexels-pixabay-276517.jpg" alt="Bike" class="product-image">
+                <div class="product-footer">
+                    <div class="product-details">
+                        <p class="product-price">$ 120,00</p>
+                        <p class="product-name">Bike</p>
+                    </div>
+                    <figure class="cart-icon-container">
+                        <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon">
+                    </figure>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./logos/pexels-pixabay-276517.jpg" alt="Bike" class="product-image">
+                <div class="product-footer">
+                    <div class="product-details">
+                        <p class="product-price">$ 120,00</p>
+                        <p class="product-name">Bike</p>
+                    </div>
+                    <figure class="cart-icon-container">
+                        <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon">
+                    </figure>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./logos/pexels-pixabay-276517.jpg" alt="Bike" class="product-image">
+                <div class="product-footer">
+                    <div class="product-details">
+                        <p class="product-price">$ 120,00</p>
+                        <p class="product-name">Bike</p>
+                    </div>
+                    <figure class="cart-icon-container">
+                        <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon">
+                    </figure>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./logos/pexels-pixabay-276517.jpg" alt="Bike" class="product-image">
+                <div class="product-footer">
+                    <div class="product-details">
+                        <p class="product-price">$ 120,00</p>
+                        <p class="product-name">Bike</p>
+                    </div>
+                    <figure class="cart-icon-container">
+                        <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon">
+                    </figure>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./logos/pexels-pixabay-276517.jpg" alt="Bike" class="product-image">
+                <div class="product-footer">
+                    <div class="product-details">
+                        <p class="product-price">$ 120,00</p>
+                        <p class="product-name">Bike</p>
+                    </div>
+                    <figure class="cart-icon-container">
+                        <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon">
+                    </figure>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./logos/pexels-pixabay-276517.jpg" alt="Bike" class="product-image">
+                <div class="product-footer">
+                    <div class="product-details">
+                        <p class="product-price">$ 120,00</p>
+                        <p class="product-name">Bike</p>
+                    </div>
+                    <figure class="cart-icon-container">
+                        <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon">
+                    </figure>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./logos/pexels-pixabay-276517.jpg" alt="Bike" class="product-image">
+                <div class="product-footer">
+                    <div class="product-details">
+                        <p class="product-price">$ 120,00</p>
+                        <p class="product-name">Bike</p>
+                    </div>
+                    <figure class="cart-icon-container">
+                        <img src="./icons/bt_add_to_cart.svg" alt="Add to cart icon">
+                    </figure>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+</body>
+</html>
