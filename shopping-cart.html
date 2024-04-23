@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --white: #FFFFFF;
+            --black: #00000;
+            --very-light-pink: #C7C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --font-size-sm: 14px;
+            --font-size-md: 16px;
+            --font-size-lg: 18px;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .cart-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .nav {
+            width: 100%;
+            height: 60px;
+            border-bottom: 2px solid var(--very-light-pink);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .menu-logo {
+            width: 40%;
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+
+        .back-arrow {
+            transform: rotate(180deg);
+            cursor: pointer;
+        }
+
+        .menu-logo img {
+            margin-left: 15px;
+        }
+
+        .cart-title {
+            width: 60%;
+            font-size: var(--font-size-lg);
+            font-weight: bold;
+        }
+
+        .cart-product-list,
+        .product-total,
+        .product-checkout {
+            width: 350px;
+        }
+
+        .cart-product-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .list-item {
+            width: 100%;
+            height: 94px;
+            display: grid;
+            grid-template-columns: 30% 30% 30% 10%;
+            font-size: var(--font-size-sm);
+            margin-top: 30px;
+        }
+
+        .item-image img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .item {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+
+        .product-name {
+            margin-left: 20px;
+            font-size: var(--font-size-md);
+            color: var(--very-light-pink);
+        }
+
+        .item-price {
+            display: flex;
+            justify-content: end;
+            margin-right: 20px;
+        }
+
+        .product-price {
+            font-weight: bold;
+            font-size: var(--font-size-lg);
+        }
+
+        .product-delete {
+            cursor: pointer;
+            width: 45%;
+        }
+
+        .product-total {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 25px;
+            height: 105px;
+            background-color: var(--very-light-pink);
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: var(--font-size-lg);
+        }
+
+        .total-title {
+            margin-left: 20px;
+        }
+
+        .total-price {
+            margin-right: 20px;
+        }
+
+        .primary-button {
+            color: var(--white);
+            background-color: var(--hospital-green);
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            font-size: var(--font-size-md);
+            cursor: pointer;
+            font-weight: bold;
+            height: 70px;
+            width: 100%;
+        }
+
+        @media (max-width: 650px) {
+            .back-arrow {
+                display: none;
+            }
+
+            .mobile-menu {
+                display: inline-block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cart-container">
+        <div class="nav">
+            <div class="menu-logo">
+                <img src="./icons/flechita.svg" alt="back arrow" class="back-arrow">
+                <img src="./icons/icon_menu.svg" alt="Menu logo" class="mobile-menu">
+            </div>
+            <div class="cart-title">
+                <span>Shopping cart</span>
+            </div>
+        </div>
+        <div class="cart-product-list">
+            <div class="list-item">
+                <div class="item item-image">
+                    <img src="./logos/pexels-pixabay-276517.jpg" alt="Product">
+                </div>
+                <div class="item">
+                    <span class="product-name">Bike</span>
+                </div>
+                <div class="item item-price">
+                    <span class="product-price">$ 120.00</span>
+                </div>
+                <div class="item">
+                    <img src="./icons/icon_close.png" alt="Close" class="product-delete">
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="item item-image">
+                    <img src="./logos/pexels-pixabay-276517.jpg" alt="Product">
+                </div>
+                <div class="item">
+                    <span class="product-name">Bike</span>
+                </div>
+                <div class="item item-price">
+                    <span class="product-price">$ 120.00</span>
+                </div>
+                <div class="item">
+                    <img src="./icons/icon_close.png" alt="Close" class="product-delete">
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="item item-image">
+                    <img src="./logos/pexels-pixabay-276517.jpg" alt="Product">
+                </div>
+                <div class="item">
+                    <span class="product-name">Bike</span>
+                </div>
+                <div class="item item-price">
+                    <span class="product-price">$ 120.00</span>
+                </div>
+                <div class="item">
+                    <img src="./icons/icon_close.png" alt="Close" class="product-delete">
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="item item-image">
+                    <img src="./logos/pexels-pixabay-276517.jpg" alt="Product">
+                </div>
+                <div class="item">
+                    <span class="product-name">Bike</span>
+                </div>
+                <div class="item item-price">
+                    <span class="product-price">$ 120.00</span>
+                </div>
+                <div class="item">
+                    <img src="./icons/icon_close.png" alt="Close" class="product-delete">
+                </div>
+            </div>
+        </div>
+        <div class="product-total">
+            <div class="total-title">
+                <span>Total</span>
+            </div>
+            <div class="total-price">
+                <span>$ 480.00</span>
+            </div>
+        </div>
+        <div class="product-checkout">
+            <button class="primary-button">Checkout</button>
+        </div>
+    </div>
+</body>
+</html>
